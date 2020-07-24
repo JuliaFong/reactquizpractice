@@ -59,15 +59,14 @@ const App = () => {
 
   const nextQuestion = () => {
     // Move on to the next question or last question
-  const nextQuestion = number + 1;
+    const nextQuestion = number + 1;
 
-  if (nextQuestion === TOTAL_QUESTIONS) {
-    setGameOver(true);
-  } else {
-    setNumber(nextQuestion)
-  }
-  
-}
+    if (nextQuestion === TOTAL_QUESTIONS) {
+      setGameOver(true);
+    } else {
+      setNumber(nextQuestion);
+    }
+};
 
   return (
     
