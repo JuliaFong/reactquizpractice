@@ -5,7 +5,7 @@ import QuestionCard from './components/QuestionCard';
 //Types
 import { QuestionState, Difficulty } from './API';
 // Styles
-import { GlobalStyle } from './App.styles';
+import { GlobalStyle, Wrapper } from './App.styles';
 
 export type AnswerObject = {
   question: string
@@ -34,7 +34,7 @@ const App = () => {
     );
 
     setQuestions(newQuestions);
-    setScore(0)
+    setScore(0 )
     setUserAnswers([])
     setNumber(0)
     setLoading(false)
@@ -73,14 +73,14 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <div className="App">
-        <h1> React Quiz</h1>
+      <Wrapper>
+        <h1>Trivia</h1>
         {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
           <button className="start" onClick={startTrivia}>
             Start Trivia
           </button> 
         ): null}
-        {!gameOver? <p className="score">Score:</p> : null }
+        {!gameOver? <p className="score">Score:</p> : null}
         {loading && <p>Loading Questions ...</p>}
         {!loading && !gameOver && (
           <QuestionCard 
@@ -100,8 +100,8 @@ const App = () => {
             Next Question
           </button>
         ): null} 
-      </div>   
-    </>
+      </Wrapper>   
+    </> 
     ) 
     
 }
