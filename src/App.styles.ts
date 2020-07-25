@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-
+//@ts-ignore
 import BGImage from './images/splashunsplash.jpg';
 
 export const GlobalStyle = createGlobalStyle`
