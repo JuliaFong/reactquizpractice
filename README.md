@@ -5,7 +5,7 @@ Trivia app is a game to test your knowledge of random facts.
 * Learn how to use React and TypeScript together
 * Review React
 * Understand hooks on a deeper level
-* Build a Trivia Game using and API
+* Build a Trivia Game using an API
 
 # Technologies Used
 * React.js
