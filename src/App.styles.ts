@@ -32,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     .score {
-        color: #ffffff;
+        color: #fff;
         font-size: 16px;
         margin: 0;
     }
